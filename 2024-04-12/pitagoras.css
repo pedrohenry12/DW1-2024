@@ -1,0 +1,12 @@
+.alinhamento {
+    text-align: center;
+}
+
+.tamanhofonte {
+   font-size: 2em;
+}
+.borda {
+    border: 2px solid black;
+    background-color: rgb(199, 199, 126);
+
+}

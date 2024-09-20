@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:root {
+    --altura-topo: 5.625rem;
+    --largura-sidebar: 6.25rem;
+    --altura-rodape: 5.625rem;
+}
+
+header{
+    height: var(--altura-topo);
+    width: 100vw;
+    background-color: yellow;
+}
+aside {
+    height: calc(100vh - var(--altura-rodape) - var(--altura-topo));
+    width: var(--largura-sidebar);
+    background-color: blue;
+}
+main{
+    height: calc(100vh - var(--altura-rodape) - var(--altura-topo));
+    width: calc(100% - var(--largura-sidebar));
+    background-color: green;
+}
+footer{
+    height: var(--altura-rodape);
+    width: 100%;
+    background-color: red;
+
+
+}
+.meio{
+    display: flex;
+}

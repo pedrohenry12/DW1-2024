@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .conteiner{
+            display: flex;
+            /* determina espaçamento horizontal entre as divs */
+            gap: 6px;
+            height: 100vh;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .box {
+            height: 100px;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        .box1{
+            background-color: green;
+            /* gera uma ordem entre os elementos (padrão 1) */
+            order: 2;
+            /* ocupa todo o espaço em branco que sobra*/
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+
+        }
+
+
+        .box2{
+            /* background-color: blue; */
+            background-image: url(https://midias.jornalcruzeiro.com.br/wp-content/uploads/2019/08/grama-1.jpg);
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+
+        }
+
+        .box3{
+            background-color: red;
+            /* flex-grow: 1; */
+            /* é a capacidade de encolhimento de algo */
+            flex-shrink: 2;
+            align-self: flex-start;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+
+
+
+
+    </div>
+</body>
+</html>

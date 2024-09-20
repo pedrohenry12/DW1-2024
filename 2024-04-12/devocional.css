@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.fonteshadows {
+    font-family: "Shadows Into Light", cursive;
+
+    /* peso da fonte */
+    font-weight: 400;
+    font-style: normal;
+      
+}
+  
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.fontenunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.fonteanton {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.cabecalho {
+    font-size: 0.8em;
+}
+
+.titulo {
+    text-transform: uppercase;
+}
+
+.versiculo {
+    font-size: 1.3em;
+}
+
+.texto {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.importante {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: green;
+}
+
+.desafio {
+    font-style: italic;
+    border: 2px solid rgb(172, 172, 172);
+    background-color: rgb(172, 172, 172);
+    /* distancia do texto até a caixa(cada função pós - indica um lado) */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.alinhamento {
+    text-align: center;
+}

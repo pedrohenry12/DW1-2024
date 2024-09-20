@@ -1,0 +1,22 @@
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td{
+            border: .1875rem solid black;
+            padding: 1rem;
+            text-align: center;
+            min-width: 5rem;
+            font-weight: bold;
+        }
+        #sumir{
+            border: none;
+        }
+
+        img{
+            width: 2rem;
+            height: 2rem;
+            vertical-align: middle;
+            margin-right: .5rem;
+        }

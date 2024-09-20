@@ -1,0 +1,122 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+:root {
+    --cor-menu: #2ab34c;
+    --cor-contato: #000000;
+    --fonte-titulo: 45px "Oswald";
+    --fonte-paragrafo: 22px "Playfair Display";
+
+
+
+
+}
+
+
+.conteiner {
+    width:100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.principal {
+    background-color: var(--cor-menu); 
+    height: 80px;
+}
+
+.principal ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.principal li{
+    list-style: none;
+}
+
+.principal a{
+    display: inline-block;
+    padding: 25px 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+
+.principal a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.secao1 {
+    height: 100vh;
+    text-indent: 1em;
+    margin: 5px;
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-de-aquarela-verde-suave-moderna_1055-18276.jpg);
+    
+    
+    
+    
+}
+
+.secao2 {
+    /* background-color: var(--cor-secao2); */
+    height: 100vh;
+    text-indent: 1em;
+    margin: 5px;
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-de-aquarela-verde-suave-moderna_1055-18276.jpg);
+    
+}
+
+.secao3 {
+    /* background-color: var(--cor-secao3); */
+    height: 100vh;
+    text-indent: 1em;
+    margin: 5px;
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-de-aquarela-verde-suave-moderna_1055-18276.jpg);
+}
+
+.contato {
+    background-color: var(--cor-contato);
+    height: 30vh;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font: var(--fonte-titulo);
+}
+
+p {
+    font: var(--fonte-paragrafo);
+    text-align: justify;
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: center;
+}
+
+.bandeira{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+}
+
+.bandeira1{
+    width: 190px;
+    height: 150px;
+
+}
+
+
+
+
+

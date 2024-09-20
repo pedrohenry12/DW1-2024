@@ -1,0 +1,34 @@
+Elementos flexbox:
+    justify-content: alinha na horizontal ou eixo principal (x).
+        flex-start: Itens se alinham à esquerda do container.
+        flex-end: Itens se alinham à direita do container.
+        center: Itens se alinham no centro do container.
+        space-between: Itens se alinham com distância igual entre eles.
+        space-around: Itens se alinham com distância igual em torno deles.
+
+    align-items: alinha os elementos na vertical ou eixo secundário (y).
+        flex-start: Itens se alinham na parte de cima do container.
+        flex-end: Itens se alinham na parte de baixo do container.
+        center: Itens se alinham no centro vertical do container.
+        baseline: Items se alinham na linha da base do container.
+        stretch: Itens se esticam para preencher o container.
+
+    flex-direction: define a direção que os items são alinhados no container.
+        row: Itens são posicionados na mesma direção do texto.
+        row-reverse: Itens são posicionados na direção oposta à do texto.
+        column: Itens são posicionados de cima para baixo.
+        column-reverse: Itens são posicionados de baixo para cima.
+
+    order: muda a posição de um determinado item individualmente, usando numeros positivos ou negativos.
+        *quanto maior  valor, mais pra trás o elemento vai* (padão 0).
+
+    align-self: aceita os mesmos comandos do align-items, porém é aplicado apenas a elementos especificos.
+
+    flex-wrap: é como um quebra linha, quando items n cabem na mesma linha ele joga pra de baixo.
+        nowrap: Todos os itens são apertados em uma única linha.
+        wrap: Itens se separam em linhas adicionais.
+        wrap-reverse: Itens se separam em linhas adicionais em reverso.
+
+    flex-flow: As duas propriedades flex-direction e flex-wrap são usadas tão frequentemente juntas que uma propriedade abreviada flex-flow foi criada para combiná-las. Essa propriedade aceita o valor das duas propriedades separados por um espaço.
+
+    align-content: mostra como as linhas devem ser espaçadas entre si, utilizando as mesmas propriedades do justify- content.

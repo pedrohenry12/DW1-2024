@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* id > classe > tag */
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: rgb(22, 24, 24);
+        }
+        /* define id */
+        #titulo_especial {
+            color: rgb(14, 19, 18);
+            background-color: rgb(134, 184, 181);
+        }
+        /* define classe */
+        .destaque {
+            background-color: rgb(177, 207, 148);
+        }
+        /* estiliza apenas os p com a classe  */
+        p.destaque {
+            font-weight: bold;
+
+        }
+
+
+        .cor_primaria {
+            color: rgb(23, 26, 23);
+        }
+
+        .cor_secundaria {
+            background-color: rgb(167, 221, 145);
+        }
+
+        .fonte_titulo {
+            font-style: oblique;
+            
+        }
+
+        .alinhamento_titulo {
+            justify-content: center;
+        }
+
+        .quadro {
+            border: 2px solid black;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="quadro">
+        <h1 id="titulo_especial"; class="fonte_titulo alinhamento_titulo">Título 1</h1>
+
+    <p class="destaque cor_secundaria">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores tenetur dolorum repudiandae iste tempore id harum, eaque, iusto, possimus porro obcaecati quas incidunt. Ab error totam minima! Ea, modi provident.</p>
+    </div>
+    
+
+    <h1 class="cor_secundaria fonte_titulo">Título 2</h1>
+
+    <p class="cor_secundaria cor_primaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas excepturi explicabo, magnam delectus veniam obcaecati ex expedita amet doloribus voluptatibus sapiente perferendis illo quidem iste tenetur perspiciatis error porro!</p>
+</body>
+</html>

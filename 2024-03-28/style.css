@@ -1,0 +1,25 @@
+
+        h1 {
+          color: blue;
+          background-color: salmon;
+          text-align: center;
+        }
+
+        p {
+
+            color: rgb(12, 12, 12);
+            text-align: justify;
+            /* font-family define o estilo da fonte */
+            font-family: Arial, Helvetica, sans-serif;  
+            
+        }
+        span {
+            color: blueviolet;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(56, 112, 0);
+            background-color: chartreuse;
+        }
+

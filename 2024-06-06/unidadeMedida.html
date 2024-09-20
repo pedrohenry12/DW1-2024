@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: gray;
+            width: 100vw;
+            height:100vh;
+            display: flex;
+            /* alinha em relação ao eixo x */
+            /* o between cola os elementos nas laterais e o around deixa um espaço na borda */
+            justify-content: space-between;
+
+
+            /* alinha em relação ao eixo y e so usamos quando temos uma linha só */
+            align-items: flex-start;
+
+            /* msm comportamento do items, mas com várias linhas */
+            /* align-content: flex-start; */
+
+            /* organiza os elementos na tela, quebrando pro lado ou pra cima */
+            /* flex-wrap: wrap; */
+            /* define um novo eixo principal */
+            flex-direction: column;
+
+
+        }
+        /* esse trio serve pra alinhar os elementos */
+        .flex-center{
+            /* abilita a edição */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box{
+            width: 6rem;
+            height: 6.25rem;
+            background-color: rebeccapurple;
+            border: 1px solid black;
+            color: white;
+            
+        }
+
+        .bg-verde {
+            background-color: green;
+        }
+
+        .bg-vermelho {
+            background-color: red;
+        }
+
+        .bg-azul{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidade de Medida</h1>
+    <div class="container">
+        <div class="flex-center box bg-verde">1</div>
+
+        <div class="flex-center box bg-vermelho">2</div>
+        <div class="flex-center box bg-azul">3</div>
+
+
+
+    </div>
+</body>
+</html>
