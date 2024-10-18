@@ -7,44 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+  />
 
 
 </head>
 
-<body>
-    <div class="container, flex">
-        <aside class="bg-black">
-            <div>
-                <img src="../img/brand-tailwind.png" alt="">
-                <span class="text-white">Tailwind</span>
+<body class="h-screen w-screen flex">
+    <div class="flex h-screen w-screen flex-wrap text-white flex-col">
+        <div class="bg-black h-screen w-1/5">
+            <div class="p-1 justify-center items-center flex">
+                <i class="ti ti-brand-tailwind"></i>
+                <span class="font-bold text-xl">Tailwind</span>
             </div>
             <div>
-                <div class="flex, text-white">
-                    <img src="../img/home.png" alt="">
-                    <span class="text-white">Home</span>
+                <div class="p-1">
+                    <i class="ti ti-home"></i>
+                    <span>Home</span>
                 </div>
 
-                <div class="flex">
-                    <img src="../img/address-book.png" alt="">
-                    <span class="text-white">Contato</span>
+                <div class="p-1">
+                    <i class="ti ti-address-book"></i>
+                    <span>Contato</span>
                 </div>
-                <div class="flex">
-                    <img src="../img/exclamation-circle.png" alt="">
-                    <span class="text-white">Sobre</span>
+                <div class="p-1">
+                    <i class="ti ti-exclamation-circle"></i>
+                    <span>Sobre</span>
                 </div>
             </div>
-        </aside>
-        
-        <header class="bg-slate-700, text-white">
-            <h1>Home</h1>
+        </div>
+
+        <div class="bg-slate-700 w-4/5 h-1/5 p-1">
+            <h1 class="font-bold text-2xl">Home</h1>
             <p>Página inicial</p>
-        </header>
+        </div>
 
-        <main class="bg-slate-900, text-white">
+        <div class="bg-slate-900 w-4/5 h-4/5 p-1">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi culpa eius tenetur repellat ullam
                 voluptate voluptatibus, adipisci fugit, quasi blanditiis veritatis ab excepturi exercitationem! Maiores
                 optio quo fuga dolore laborum?</p>
-        </main>
+        </div>
     </div>
 
 </body>
