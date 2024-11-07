@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Navbar Responsiva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./navResponsiva.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="topo">
-            <span>Logo</span>
-            <ul>
-                <li class="hideDesktop">Home</li>
-                <li class="hideDesktop">Sobre</li>
-                <li class="hideDesktop">Contato</li>
-                <li id="icon" class="hideMobile">
-                    <a href="#">
-                        <svg class="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="menu" fill="rgb(255,255,255)"><g data-name="Layer 2"><g data-name="menu"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"></rect><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"></rect><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"></rect></g></g></svg>
+    <nav class="navbar">
+        <ul>
+            <li>Logo</li>
+            <li class="hideMobile"><a href="">Home</a></li>
+            <li class="hideMobile"><a href="">Sobre</a></li>
+            <li class="hideMobile"><a href="">Contato</a></li>
+            <li id="hamburgerIcon" class="hideDesktop">
+                <a href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a>
+            </li>
+
+        <ul id="sidebar">
+            <li id="closeIcon">
+                <a href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
                     </a>
                 </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contatos</a></li>
+                <li><a href="">Sobre</a></li>
             </ul>
-
-            <ul id="celular">
-
-            
-                <li id="closeIcon">
-                    <a href="#"><svg class="icone" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
-                </li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                
-            </ul>
-    
-
-        </div>
-        <div class="corpo">
-            <h1>Navbar Responsiva</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem provident nisi nulla, obcaecati, in consequuntur odio unde laboriosam, nam aspernatur voluptatum vero voluptatibus voluptates nostrum. Quae laborum alias ullam!</p>
-        </div>
-
-
-
-
-
-
+        </ul>
+    </nav>
+    <div>
+        <h2>Navbar Responsiva</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea consectetur, excepturi veritatis, dolor necessitatibus corporis voluptatem, impedit ipsam quas neque accusantium cum sunt itaque? Accusamus quae adipisci sint dignissimos alias?</p>
     </div>
+
+    <script>
+        // Captura dos elementos HTML
+        const hamburgerIcon = document.querySelector("#hamburgerIcon")
+        const closeIcon = document.querySelector("#closeIcon")
+
+        // Associar funções aos eventos dos elementos HTML
+        hamburgerIcon.addEventListener("click", showSidebar)
+        closeIcon.addEventListener("click", hideSidebar)
+
+        // Funções para abrir e fechar o sideBar
+        function showSidebar() {
+            const sidebar = document.querySelector("#sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector("#sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
 </body>
+
 </html>
