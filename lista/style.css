@@ -102,11 +102,12 @@ progress {
     border: 1px solid black;
     border-radius: 10px;
     display: none;
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
     margin: 10px;
-    z-index: 99999;
     position: fixed;
+    padding: 20px;
 }
 
 li {
@@ -119,9 +120,9 @@ li {
 .x svg{
     height: 50px;
     width: 50px;
-    position: fixed;
-    top: 5rem;
-    right: 7rem;
+    margin-left: 63rem;
+    
+    
     
 }
 
@@ -142,6 +143,17 @@ svg{
     height: 25px;
     width: 25px;
     fill: white;
+    
+}
+
+.tema svg{
+    fill: black;
+    height: 70px;
+    width: 70px;
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 /* Dark Theme */
@@ -177,6 +189,14 @@ button.dark:hover{
     color: white;
     border: none;
     transition: 0.5s;
+}
+
+div.dark{
+    background-color: var(--dark-input);
+}
+
+span.dark{
+    color: var(--dark-title);
 }
 
 
@@ -215,4 +235,8 @@ button.light:hover{
     background-image: linear-gradient(var(--light-li), var(--light-title));
     color: white;
     transition: 0.5s;
+}
+
+div.ligth{
+    background-color: var(--dark-title);
 }
