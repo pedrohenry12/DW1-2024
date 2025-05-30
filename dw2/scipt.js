@@ -1,8 +1,9 @@
+
 const button = document.getElementById("botao")
 
 button.addEventListener("click", () => {
   const isbn = document.getElementById("idLivro").value.trim()
-  
+
   if (!isbn) {
     alert("Digite um ISBN válido.")
     return
@@ -15,7 +16,7 @@ button.addEventListener("click", () => {
       if (!response.ok) {
         throw new Error("Livro não encontrado")
       }
-      return response.json();
+      return response.json()
     })
     .then(data => {
       document.getElementById("titulo").textContent = data.title

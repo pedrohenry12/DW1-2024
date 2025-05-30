@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Busca de Livro</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div>
-          <input id="idLivro" type="text" placeholder="Buscar livro">
-          <button id="botao" >buscar</button>
-      </div>
-      <div class="infos" id="titulo"></div>
-      <div class="infos" id="autor"></div>
-      <div class="infos" id="ano"></div>
-    </div>
-  </div>
+  <h1>Buscar Livros</h1>
+  
+  <input type="text" id="idLivro" placeholder="Digite o ISBN">
+  <button id="botao">Buscar</button>
+
+  <h2>Resultado</h2>
+  <p><strong>Título:</strong> <span id="titulo"></span></p>
+  <p><strong>Autor(es):</strong> <span id="autor"></span></p>
+  <p><strong>Ano:</strong> <span id="ano"></span></p>
+
+  <script src="scipt.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
